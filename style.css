@@ -4,6 +4,8 @@ html{
     font-size: 12px;
 	font-weight: 300;
     font-family: 'Roboto', sans-serif;
+	background: url(photos/Background2.jpg) no-repeat center fixed;
+  	background-size: cover;
 }
 #menu{
 	position: fixed;
