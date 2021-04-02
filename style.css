@@ -130,6 +130,14 @@ html{
 /*	Q&A */
 .answers{
 	text-align: left;
+	font-weight: bold;
+	font-size: 150%;
+	color: #253333;
+}
+
+.answers h1, h3{
+	position: relative;
+	text-align: center;
 }
 
 #Messege{
