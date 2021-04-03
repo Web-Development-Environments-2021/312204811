@@ -11,7 +11,7 @@
   </head>
 <body>
   <div  id="menu">
-    <img class="logo" src="photos/newlogo.png" alt="logo" style="margin-right: 1950px ;height: 150%; background: transparent;" align="center">
+    <img class="logo" src="photos/newlogo.png" alt="logo" style="position: absolute; top: 10px; left: 30px; height: 75%; width: auto;">
     <ul class="nav_bar">
       <li><a href="#about">About Me</a></li>
       <li><a href="#photos">My Photos</a></li>
@@ -170,6 +170,7 @@
   <br/>
     <div class="container">
       <h1>Please like my page</h1>
+      <br>
       <h3>Show me some appriciation</h3>
       <br>
       <div class="like-section">
@@ -244,21 +245,22 @@
     <h1 id="Contact me">Contact me by email</h1>
     <br/>
     <div class="Contact_me_box" align="center">
-        <form action="mailto:shiretod@post.bgu.ac.il" method="post" enctype="text/plain">
+      <!-- Not working, created new script to send the mail, using the form ids -->
+        <form action="mailto:shiretod@post.bgu.ac.il?subject=New Mail From Client" method="post" enctype="text/plain"> 
             <label for="mail"><strong>Email:</strong></label><br>
             <input type="email" id="mail" name="mailAdd" placeholder="write your mail here.." required="required" ><br>
             <label for="Subject"><strong>Subject:</strong></label><br>
             <input type="text" id="Subject" name="subject" placeholder="write your subject here.." required="required" ><br>
             <label for="Message"><strong>Message:</strong></label><br>
-            <textarea id="Message" name="Message:" rows="10" cols="36" data-emojiable="true" placeholder="Enter your message here" required="required"></textarea><br/>
-            <input type="submit" value="Submit">
+            <textarea id="Message" name="Message:" rows="10" cols="36" data-emoji-picker="true" data-emojiable="true" placeholder="Enter your message here" required="required"></textarea><br/>
+            <input type="submit" value="Submit" onclick="SendMail(); return false">
             <input type="reset" value="Clear">
         </form>
     </div>
 
     <br/>
     <br/>
-    <script src="emojipick.js"></script>
+    <script src="emojiPicker.js"></script>
     <script>
         (() => {
             new EmojiPicker()
@@ -266,7 +268,14 @@
     </script>
   </section>
 
+  <script>
+    function SendMail(){
+      var content = "mailto:shiretod@post.bgu.ac.il?subject=New Mail From Client"
+                  + "&body=" + encodeURIComponent(document.getElementById('Message').value);
+      window.location.href = content;
+    }
 
+  </script>
 
   <script type="text/javascript">
   $(function(){
@@ -283,3 +292,6 @@
   </script>
   </body>
 </html>
+
+
+<!-- <img class="logo" src="photos/newlogo.png" alt="logo" style="margin-right: 1950px ;height: 150%; background: transparent;" align="center"> -->
