@@ -42,18 +42,19 @@
       <br>
       <br>
       <h1>About Me</h1>
+      <div class="about_title" align="center">
+        <h2 dir="rtl">ראיון קצר עם יוסף שרטו</h2>
+        <h3>שם: יוסף שרטו</h2>
+        <h3>תאריך לידה: 26.2.1935</h2>
+      </div>
       <div class="about_wrap">
         <div class="about_text">
-          <h2 dir="rtl">ראיון קצר עם יוסף שרטו</h2>
-          <h3>שם: יוסף שרטו</h2>
-          <h3>תאריך לידה: 26.2.1935</h2>
           <p dir="rtl">
             יוסף שרטו נולד בכפר הונגורן שברמניה, ליעקוב וחיה ז"ל, שנרצחו בשואה
             <br>
             לאחר שהוריו נרצחו, הועבר יוסף לבית יותמים שם העביר את שנות נעריו.
             <br>
             בשנת 1947 החל יוסף שרטו את מסע העליה שלו לארץ ישראל, מסע שערך מספר חודשים רבים.
-            <br>
             <br>
             <h4 dir="rtl">מה זכור לך מהעלייה עם הילדים היתומים לארץ ישראל?</h4>
             יצאנו מרומניה בשנת 1947 לכיוון בולגריה, שם חיכו לנו 2 אוניות אמרקאיות
@@ -73,8 +74,6 @@
             לאחר כחודשיים בתוך מחנה הסגר, ובעקבות הסכם בין השלטונות הבריטים אפשרו לכל הילדים היתומים לעלות לארץ ישראל
             <br>
             וכך, לאחר מספר רב של חודשים, בשנת 1948 עליתי לארץ ישראל.
-            <br>
-            <br>
             <h4 dir="rtl">מה קרה איתך לאחר העליה?</h4>
             מדינת ישראל קלטה אותנו, והעבירה אותנו ישר למשמפחות מאמצות.
             <br>
@@ -99,8 +98,6 @@
             לאחר שהשתחררתי מהצבא, פגשתי את אישתי, ציפורה שלה אני נשוי עד היום.
             <br>
             יש לנו 3 ילדים, 12 נכדים ונינה אחת.
-            <br>
-            <br>
             <h4 dir="rtl">מה הם התחביבים האהובים עליך?</h4>
             אני אוהב לבלות זמן בחצר, לפגוש חברים במועדון הגימלאים, לפגוש את בני המשפחה שלי.
             <br>
@@ -173,15 +170,12 @@
   <br/>
     <div class="container">
       <h1>Please like my page</h1>
-      <h5>Show me some appriciation</h5>
+      <h3>Show me some appriciation</h3>
       <br>
       <div class="like-section">
         <div class="fb-like" data-href="https://web-development-environments-2021.github.io/assignment1-DorShireto/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
       </div>
     </div>
-  <br/>
-  <br/>
-  <br/>
   </section>
 
   <section id="qrcoder" class="section">
@@ -194,7 +188,7 @@
         <br/>
         <br>
         <h1>QR Code</h1>
-        <h5>Get accsess to this web from everywhere</h5>
+        <h3>Get accsess to this web from everywhere</h3>
         <br>
       
         <div class="qr-photo">
@@ -214,8 +208,8 @@
     <br>
 
     <div class="container">
+      <h1>Questions & Answers</h1>
       <div class="answers">
-        <h1>Questions & Answers</h1>
         <br>
         <h3>Question 1: What are the three main diffrences between Web 1.0, Web 2.0 and Web 3.0?</h4>
         <br>
@@ -246,19 +240,17 @@
     <br/>
   </section>
 
-  <section id="contact" class="section">
-
-
-    <h2 id="Contact me" align="center">Contact me by email</h2>
+  <section id="contact" class="container">
+    <h1 id="Contact me">Contact me by email</h1>
     <br/>
     <div class="Contact_me_box" align="center">
         <form action="mailto:shiretod@post.bgu.ac.il" method="post" enctype="text/plain">
             <label for="mail"><strong>Email:</strong></label><br>
-            <input type="text" id="mail" name="fname" placeholder="write your mail here.."><br>
+            <input type="email" id="mail" name="mailAdd" placeholder="write your mail here.." required="required" ><br>
             <label for="Subject"><strong>Subject:</strong></label><br>
-            <input type="text" id="Subject" name="lname" placeholder="write your subject here.."><br>
+            <input type="text" id="Subject" name="subject" placeholder="write your subject here.." required="required" ><br>
             <label for="Message"><strong>Message:</strong></label><br>
-            <textarea id="Message" name="Message:" rows="10" cols="36" data-emojiable="true" placeholder="Enter your message here"></textarea><br/>
+            <textarea id="Message" name="Message:" rows="10" cols="36" data-emojiable="true" placeholder="Enter your message here" required="required"></textarea><br/>
             <input type="submit" value="Submit">
             <input type="reset" value="Clear">
         </form>

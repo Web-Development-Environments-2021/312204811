@@ -96,6 +96,9 @@ html{
 	padding-right: 10px;
 }
 
+.about_title h2{
+	text-decoration: underline;
+}
 
 
 
@@ -150,9 +153,7 @@ html{
 	width: 80%;
 }
 
-.Contact_me_box form{
-	padding-left: 80px;
-}
+
 
 /*		General		*/
 h1{
