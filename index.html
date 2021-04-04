@@ -11,7 +11,7 @@
   </head>
 <body>
   <div  id="menu">
-    <img class="logo" src="photos/newlogo.png" alt="logo" style="position: absolute; top: 10px; left: 30px; height: 75%; width: auto;">
+    <img class="logo" src="photos/newlogo.png" alt="logo">
     <ul class="nav_bar">
       <li><a href="#about">About Me</a></li>
       <li><a href="#photos">My Photos</a></li>
@@ -210,33 +210,37 @@
 
     <div class="container">
       <h1>Questions & Answers</h1>
-      <div class="answers">
-        <br>
-        <h3>Question 1: What are the three main diffrences between Web 1.0, Web 2.0 and Web 3.0?</h4>
-        <br>
-        <ol type="1">
-          <li>
-            <strong style="text-decoration: underline;">Communication</strong><br>
-              In Web 1.0 there is no communication between the website and the clients, as Web 1.0 is a Read-Only platform. <br>
-              While Web 2.0 and Web 3.0 allows clients to communicate, Web 2.0 is a Read-Write <br>
-              Web 3.0 uses semantic methods where the computers uses "logic" and can analyzes data and provide wider knowledge.
-          </li>
-          
-          <li>
-            <strong style="text-decoration: underline;">Data retrieval</strong><br>
-            Read-Write platform <br>
-            Web 1.0 is the first stage of the World Wide Web, also known as WWW. <br>
-            It is an information portal page, where users can only read, with no options to leave comments or feedback. <br>
-            Only the website owner can change the content. <br>
-          </li>
-
-          <li>
-            
-          </li>
-        </ol>
-      </div>
     </div>
     <br/>
+    <br>
+    <br>
+    <h3></h3>
+    <table class="table_answers">
+      <tr class="header">
+        <th>Web 3.0</th>
+        <th>Web 2.0</th>
+        <th>Web 1.0</th>
+        <th>קריטריון</th>
+      </tr>
+      <tr>
+        <th class="table-row">קריאה-כתיבה מותאמת למשתמש</th>
+        <th class="table-row">קריאה-כתיבה</th>
+        <th class="table-row">קריאה בלבד</th>
+        <th class="criterion">תקשורת</th>
+      </tr>
+      <tr>
+        <th class="table-row"> מנועי חיפוש מתקדמים עם שיטות אינדוקס וסנמטיקה מתקדמים <br> תוצאות מדוייקות ומגוונות</th>
+        <th class="table-row"> מרחב אינטרנטי מאונדקס, חיפוש לפי מרכיבי השאילתא <br> תוצאות מדויקות יותר </th>
+        <th class="table-row">שאילתא מדוייקת - URL <br> תוצאות חיפוש לא מדוייקות </th>
+        <th class="criterion">אחזור מידע</th>
+      </tr>
+      <tr>
+        <th class="table-row">פרטים</th>
+        <th class="table-row">קהילות לשיתוף ידע</th>
+        <th class="table-row">חברות מסחר</th>
+        <th class="criterion">קהל יעד</th>
+      </tr>
+    </table>
     <br/>
     <br/>
   </section>
@@ -270,8 +274,9 @@
 
   <script>
     function SendMail(){
-      var content = "mailto:shiretod@post.bgu.ac.il?subject=New Mail From Client"
-                  + "&body=" + encodeURIComponent(document.getElementById('Message').value);
+      let content = "mailto:shiretod@post.bgu.ac.il?subject=New Mail From Client"
+                      + "&subjet=" + encodeURIComponent(document.getElementById('Subject').value)
+                      + "&body="  + encodeURIComponent(document.getElementById('mail').value) +  encodeURIComponent(document.getElementById('Message').value);
       window.location.href = content;
     }
 
@@ -292,6 +297,3 @@
   </script>
   </body>
 </html>
-
-
-<!-- <img class="logo" src="photos/newlogo.png" alt="logo" style="margin-right: 1950px ;height: 150%; background: transparent;" align="center"> -->
