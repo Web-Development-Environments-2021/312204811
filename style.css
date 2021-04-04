@@ -1,3 +1,9 @@
+/*		General		*/
+h1{
+	background-color: #262626;
+	color: #3F5959;
+	padding: 5px 0px 5px 0px;
+}
 
 
 html{
@@ -114,13 +120,6 @@ html{
 /*	About me section ends	*/
 
 
-
-
-
-
-
-
-
 /*	Phothos section		*/
 .myPhotos{
 	display: flex;
@@ -139,32 +138,12 @@ html{
 }
 
 /*	Q&A */
-/* .answers{
-	text-align: left;
-	font-weight: bold;
-	font-size: 150%;
-	color: #253333;
-} */
 
 .answers h1, h3{
 	position: relative;
 	text-align: center;
 }
 
-#Messege{
-	width: 60%;
-}
-
-.Contact_me_box{
-	margin-left: 150px;
-	margin-right: 50px;
-	width: 80%;
-}
-
-
-
-/*  */
-/*  */
 .table_answers{
 	text-align: right;
 	padding-top: 10px;
@@ -183,33 +162,51 @@ th {
 	text-align: center;
 }
 
-.header
+.table_header
 {
 	background-color: #003333;
 	color: white;
 }
 
-.criterion
+.feature
 {
 	background-color: #669999;
 	font-weight: bolder;
 	text-decoration-line: underline;
 	width: 5%;
 }
-.table-row{
+.answer_cel{
 	width: auto;
 }
-/*  */
+
+/* END Q&A */
+
+/* MAILBOX */
 
 
-
-
-/*		General		*/
-h1{
-	background-color: #262626;
-	color: #3F5959;
-	padding: 5px 0px 5px 0px;
+#Messege{
+	width: 60%;
 }
+
+.Contact_me_box{
+	margin-left: 150px;
+	margin-right: 50px;
+	width: 80%;
+}
+
+/* BOTTOM */
+
+.bottom_line{
+	background-color: #262626;
+	width: 100%;
+	/* padding-bottom: 10px; */
+	margin-bottom: -1%;
+}
+
+
+
+
+
 
 
 
