@@ -2,7 +2,7 @@
 
 ת.ז: 312204811
 
-קישור לאתר: https://web-development-environments-2021.github.io/assignment1-312204811
+קישור לאתר: https://web-development-environments-2021.github.io/312204811
 
 
 
